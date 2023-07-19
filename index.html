@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <!-- Bootstrap icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- toasty notification library CDN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <!--! Header Start -->
+    <header>
+      <!-- header left side -->
+      <div class="left">
+        <div class="menu"><i class="bi bi-list"></i></div>
+        <img src="assets/images/logo-24.png" alt="profile-pic." />
+        <span>Gmail</span>
+      </div>
+      <!-- header middle side -->
+      <div class="middle">
+        <form>
+          <div class="icon" id="search-icon"><i class="bi bi-search"></i></div>
+          <input id="search-input" type="search" placeholder="Search mail" />
+        </form>
+      </div>
+      <!-- header right side -->
+      <div class="right">
+        <div id="dark-mode-toggle" class="toggle-btn"></div>
+        <i class="bi bi-question-circle"></i>
+        <i class="bi bi-gear"></i>
+        <i class="bi bi-menu-up"></i>
+        <img src="assets/images/profil.png" alt="yüklenemedi..." />
+      </div>
+    </header>
+    <!--! Header End -->
+
+    <!--* Section Start -->
+
+    <section>
+      <!-- Left Navigation Start -->
+      <nav>
+        <div class="create-mail">
+          <i class="bi bi-pencil-fill"></i>
+          <span>Compose</span>
+        </div>
+        <div class="middle"></div>
+        <div class="bottom">
+          <div>
+            <span>Labels</span>
+            <i class="bi bi-plus-lg"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Left Navigation End -->
+
+      <!-- Main Section Start -->
+      <main>
+        <div class="top">
+          <div class="left">
+            <input type="checkbox" />
+            <i class="bi bi-arrow-clockwise"></i>
+            <i class="bi bi-three-dots-vertical"></i>
+          </div>
+          <div class="right">
+            <p>1-50 of 94</p>
+            <i class="bi bi-chevron-left passive"></i>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="mails-area">
+          <div class="mail">
+            <div class="left">
+              <input type="checkbox" />
+              <i class="bi bi-star"></i>
+              <span>Ilker Teymur</span>
+            </div>
+            <div class="right">
+              <p class="message-title">Good Morning!</p>
+
+              <p class="message-desc">How is going your day ?</p>
+
+              <p class="message-date">13 Dec</p>
+              <button id="delete">Sil</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Main Section End -->
+
+      <!-- Right aside Start -->
+      <aside>
+        <img src="assets/images/calendar-48.png" alt="" class="icon" />
+        <img src="assets/images/keep-48.png" alt="" class="icon" />
+        <img src="assets/images/task-48.png" alt="" class="icon" />
+        <img src="assets/images/account-48.png" alt="" class="icon" />
+        <span></span>
+        <i class="bi bi-plus-lg icon"></i>
+      </aside>
+
+      <!-- Right aside End -->
+    </section>
+
+    <!--* Section End -->
+
+    <!--! New mail create section START -->
+
+    <div class="modal-wrapper">
+      <div class="modal-inner">
+        <i id="close-btn" class="bi bi-x"></i>
+        <form id="create-mail-form">
+          <label>To</label>
+          <input type="text" />
+
+          <label>Title</label>
+          <input type="text" />
+
+          <label>About</label>
+          <textarea></textarea>
+
+          <button id="send-mail-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!--! New mail create section END -->
+
+    <!-- Js bağlantısı -->
+    <script src="script.js" type="module"></script>
+
+    <!-- toastify notification library js  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+%icon{
+    width: 35px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    padding: 3px;
+    border-radius: 50%;
+    transition: all .3s;
+    &:hover{
+        background: #d8dbdd;
+        transition: all .3s;
+    }
+    
+}
+
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

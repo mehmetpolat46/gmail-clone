@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "modules";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//? Variables
+$light-gray: #f8f9fa;
+$middle-gray: #e9ecef;
+$dark-gray: #495057;
+$light-blue: #d0ebff;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f6f8fc;
+}
+
+i {
+  cursor: pointer;
+}
+
+//! Header Start
+header {
+  @extend %flex;
+  justify-content: space-between !important;
+  gap: 20px;
+  padding: 20px;
+  font-size: 21px;
+
+  .left {
+    @extend %flex;
+    gap: 10px;
+
+    .menu {
+      font-size: 30px;
+      @extend %icon;
+      margin-right: 20px;
+    }
+
+    img,
+    span {
+      cursor: pointer;
+    }
+  }
+
+  .middle {
+    form {
+      background: rgb(243, 243, 243);
+      @extend %flex;
+      padding: 6px 9px;
+      border-radius: 10px;
+      gap: 10px;
+      .icon {
+        @extend %icon;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background: transparent;
+      }
+    }
+  }
+
+  .right {
+    @extend %flex;
+    gap: 15px;
+    i {
+      @extend %icon;
+    }
+    img {
+      height: 36px;
+      width: 30px;
+      object-fit: fill;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+//! Header End
+
+//? Section Start
+section {
+  display: flex;
+  gap: 20px;
+}
+
+//! Navigation Start
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 40px;
+
+  .create-mail {
+    background: $light-blue;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 2px 2px 10px gray;
+      transition: all 0.4s;
+    }
+  }
+
+  .middle {
+    display: grid;
+    font-size: 16px;
+    .active {
+      font-weight: bold;
+      background: #e7f5ff;
+      border-radius: 0 20px 20px 0;
+    }
+    a {
+      padding: 8px;
+      margin-left: 4px;
+      display: flex;
+      gap: 12px;
+      cursor: pointer;
+      &:hover {
+        background: #e7f5ff;
+        border-radius: 0 20px 20px 0;
+      }
+      i,
+      span {
+        pointer-events: none;
+      }
+    }
+  }
+
+  .bottom {
+    div {
+      @extend %flex;
+      justify-content: space-between;
+    }
+  }
+}
+//! Navigation End
+
+//! Hide Navigation Start
+.hide {
+  .create-mail span,
+  .middle a span,
+  .bottom div span {
+    display: none;
+  }
+}
+
+//! Hide Navigation End
+
+//? Mail section Start
+
+main {
+  flex-grow: 1;
+  .top {
+    background: white;
+    border-radius: 10px 10px 0 0;
+    padding: 8px;
+    @extend %flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      gap: 10px;
+    }
+    i {
+      @extend %icon;
+      width: 25px;
+      height: 25px;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .passive {
+        color: gray;
+        cursor: default;
+      }
+    }
+
+    i {
+      @extend %icon;
+      font-size: 16px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .mails-area {
+    height: 80vh;
+    background: $middle-gray;
+  }
+}
+//? Mail section End
+
+//*Aside Start
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+  span {
+    background-color: #9fa3a7;
+    width: 100%;
+    height: 2px;
+  }
+  img {
+    cursor: pointer;
+    width: 32px;
+  }
+}
+//*Aside End
+
+//! Mail inside Start
+
+.mail {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid ghostwhite;
+  padding: 10px;
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 0 2px rgb(155, 155, 165);
+    transition: box-shadow 0.2s;
+  }
+
+  .left {
+    @extend %flex;
+    justify-content: start;
+    
+    gap: 5px;
+  }
+
+  .right {
+    @extend %flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-left: -100px;
+    .message-title {
+      font-weight: bold;
+    }
+    button {
+      background: none;
+      border: none;
+      font-size: 17px;
+      display: none;
+      padding: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: #495057;
+        color: white;
+      }
+    }
+    .message-date {
+      white-space: nowrap;
+    }
+  }
+  &:hover > .right .message-date {
+    display: none;
+  }
+  &:hover > .right button {
+    display: block;
+  }
+}
+
+//? star color change
+.star-active {
+  color: rgb(125, 233, 115) !important;
+}
+
+.active-category {
+  background: #d0ebff;
+  border-radius: 15px;
+}
+
+//! Mail inside End
+
+//! Section End
+
+//! New mail create section START
+.active {
+  display: grid;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #49505742;
+  display: none;
+  place-items: center;
+
+  .modal-inner {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    #close-btn {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-top: 40px;
+      }
+      input,
+      textarea {
+        border: 1px solid grey;
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 8px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 200px;
+        max-height: 200px;
+        resize: none;
+        padding: 8px;
+      }
+      #send-mail-btn {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        background: rgb(140, 61, 214);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: box-shadow 0.4s;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0 0 20px rgb(163, 131, 192);
+          transition: box-shadow 0.4s;
+        }
+      }
+    }
+  }
+}
+
+//? New mail create section END
+
+
+//! The switch - the box around the slider 
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+//! Hide default HTML checkbox 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+//! The slider 
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #9fccfa;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+//! toggle ball
+.toggle-btn {
+  width: 40px;
+  height: 20px;
+  background: #d3d3d3;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+}
+
+.dark-mode .toggle-btn {
+  background: #333;
+  transition: all 0.2s;
+  &::after {
+    transform: translateX(20px);
+    transition: all 0.2s;
+  }
+}
+
+//! dark-light mode START
+
+.dark-mode{
+  .active-category{
+    background: white;
+  }
+  section{
+    display: flex;
+    background: $light-blue;
+    .create-mail{
+      background: white;
+    }
+    .middle{
+      a:hover{
+        background-color: white;
+      }
+    }
+  
+  }
+  header{
+    background-color: $light-blue;
+    color: black;
+    display: flex;
+    
+    }
+    
+}
+//! dark-light mode END
+
+
+//! responsive 
+@media screen and (max-width: 1300px) {
+  .mails-area .right {
+      margin-left: unset;
+  }
+}
+
+
+
+
+
