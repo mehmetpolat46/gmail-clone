@@ -4,7 +4,7 @@ export const mailData = [
   {
     id: 1,
     sender: "HepsiBurada",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Hepsiburada siparişiniz hakkinda",
     message: "verdiğiniz sipariş teslim edilmiştir.",
     date: "13 Dec",
@@ -12,7 +12,7 @@ export const mailData = [
   {
     id: 2,
     sender: "Gmail",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Gmail'den önemli bir mesaj",
     message: "Önemli bir konu hakkında sizinle iletişime geçmek istiyoruz",
     date: "11 Mayıs",
@@ -20,7 +20,7 @@ export const mailData = [
   {
     id: 3,
     sender: "Facebook",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Yeni bildirim: Arkadaşlık isteği",
     message:
       "Birisi size arkadaşlık isteği gönderdi. Kabul etmek isterseniz profiline giderek isteği onaylayabilirsiniz",
@@ -29,7 +29,7 @@ export const mailData = [
   {
     id: 4,
     sender: "Amazon",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Amazon Prime Üyeliğiniz Hakkında Bilgilendirme",
     message:
       "Prime üyeliğinizin yenileme tarihi yaklaşıyor. Son gün kaçırılmayacak fırsatları yakalamak için üyeliğinizi yenileyebilirsiniz.",
@@ -38,7 +38,7 @@ export const mailData = [
   {
     id: 5,
     sender: "LinkedIn",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "LinkedIn'den yeni mesaj",
     message:
       "Bir LinkedIn bağlantınız size mesaj gönderdi. Gelen kutunuzu kontrol etmeyi unutmayın.",
@@ -47,7 +47,7 @@ export const mailData = [
   {
     id: 6,
     sender: "Twitter",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Yeni tweet bildirimi",
     message:
       "Takip ettiğiniz bir kişi yeni bir tweet paylaştı. Merak ettiğiniz konular hakkında güncel bilgilere ulaşabilirsiniz.",
@@ -56,7 +56,7 @@ export const mailData = [
   {
     id: 7,
     sender: "Netflix",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Yeni İçerik: Favori Dizinizin Yeni Sezonu",
     message:
       "Favori dizinizin yeni sezonu yayınlandı! Hemen izlemeye başlayabilirsiniz.",
@@ -65,7 +65,7 @@ export const mailData = [
   {
     id: 8,
     sender: "Bank",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Hesap Bakiyeniz: Güncel Bilgilendirme",
     message:
       "Hesabınızdaki bakiye güncellendi. Son işlemleri kontrol etmek ve hesabınızla ilgili önemli bilgileri görmek için hesap panelinizi ziyaret edin.",
@@ -74,7 +74,7 @@ export const mailData = [
   {
     id: 9,
     sender: "Instagram",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Bildirim: Yeni Takipçi",
     message:
       "Yeni biri sizi takip etmeye başladı. Profilinizi ziyaret ederek bu kişiyle iletişim kurabilirsiniz.",
@@ -83,7 +83,7 @@ export const mailData = [
   {
     id: 10,
     sender: "Spotify",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Özel Teklif: Premium Üyelik",
     message:
       "Spotify Premium üyeliği için size özel bir teklifimiz var. Sınırsız müzik keyfi için hemen üyeliğinizi güncelleyin.",
@@ -92,7 +92,7 @@ export const mailData = [
   {
     id: 11,
     sender: "DHL",
-    receiver: "Ilker",
+    receiver: "Polat",
     title: "Kargo Teslimat Bildirimi",
     message:
       "Kargonuz yola çıktı ve yakında teslim edilecek. Siparişinizi takip etmek için kargo takip numarasını kullanabilirsiniz.",

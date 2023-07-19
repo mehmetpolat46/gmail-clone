@@ -109,7 +109,7 @@ function sendMail(e) {
   // yeni mail objesi oluşturma
   const newMail = {
     id: new Date().getTime(),
-    sender: "Ilker",
+    sender: "Polat",
     receiver,
     title,
     starred: false,
