@@ -14,4 +14,4 @@ HTML, SCSS ve JavaScript kullanılarak oluşturulmuş basit bir e-posta istemcis
 
 ## `Screen`
 
-![](gmail.gif)# gmail-clone
+![](gmaili.gif)# gmail-clone
